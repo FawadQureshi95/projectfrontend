@@ -1,4 +1,4 @@
-name: SlackNotification
+name: frontend
 
 on:
   push:
