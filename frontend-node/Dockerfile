@@ -9,12 +9,12 @@ WORKDIR /app
 
 EXPOSE 8080
 
-COPY package*.json ./
+COPY frontend-node/package*.json ./
 
 RUN npm install
 
 RUN apk add curl 
 
-#COPY server.js ./
+COPY frontend-node/server.js ./
 
 CMD [ "npm", "start" ]
